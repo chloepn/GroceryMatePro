@@ -1,9 +1,9 @@
-// src/App.jsx
 import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import { ThemeProvider } from './contexts/ThemeContext';
+import './styles/App.css'; // Import the CSS file
 
 const App = () => {
   const [activeView, setActiveView] = useState('dashboard');
@@ -11,12 +11,12 @@ const App = () => {
   
   return (
     <ThemeProvider>
-      <div className="flex h-screen">
+      <div className="app-container">
         <Sidebar 
           activeView={activeView} 
           setActiveView={setActiveView} 
         />
-        <div className="flex-1 flex flex-col overflow-hidden">
+        <div className="main-content">
           <Header activeView={activeView} />
           <MainContent 
             activeView={activeView} 

@@ -1,0 +1,180 @@
+/* ShoppingListView.css */
+
+/* Header Section */
+.shopping-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+}
+
+.shopping-list-title {
+  font-size: 1.5rem; /* Tailwind's text-2xl */
+  font-weight: 700; /* Tailwind's font-bold */
+}
+
+.shopping-list-title-dark {
+  color: #ffffff; /* Tailwind's text-white */
+}
+
+.shopping-list-title-light {
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+.shopping-list-subtitle-dark {
+  color: #d1d5db; /* Tailwind's text-gray-300 */
+}
+
+.shopping-list-subtitle-light {
+  color: #4b5563; /* Tailwind's text-gray-600 */
+}
+
+.create-list-button {
+  background-color: #059669; /* Tailwind's bg-emerald-600 */
+  color: #ffffff; /* Tailwind's text-white */
+  padding: 0.5rem 1rem; /* Tailwind's px-4 py-2 */
+  border-radius: 0.375rem; /* Tailwind's rounded-md */
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  font-weight: 500; /* Tailwind's font-medium */
+  display: flex;
+  align-items: center;
+}
+
+.create-list-button:hover {
+  background-color: #047857; /* Tailwind's hover:bg-emerald-700 */
+}
+
+/* Shopping List Grid */
+.shopping-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tailwind's grid-cols-3 */
+  gap: 1.5rem; /* Tailwind's gap-6 */
+}
+
+/* Shopping List Card */
+.shopping-list-card {
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  border-width: 1px; /* Tailwind's border */
+  padding: 1.25rem; /* Tailwind's p-5 */
+  transition: all 0.2s; /* Tailwind's transition-all */
+  cursor: pointer;
+}
+
+.shopping-list-card-dark {
+  background-color: #1f2937; /* Tailwind's bg-gray-800 */
+  border-color: #374151; /* Tailwind's border-gray-700 */
+}
+
+.shopping-list-card-dark:hover {
+  background-color: #374151; /* Tailwind's hover:bg-gray-700 */
+}
+
+.shopping-list-card-light {
+  background-color: #ffffff; /* Tailwind's bg-white */
+  border-color: #e5e7eb; /* Tailwind's border-gray-200 */
+}
+
+.shopping-list-card-light:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's hover:shadow-md */
+}
+
+/* Card Title */
+.shopping-list-card-title {
+  font-size: 1.125rem; /* Tailwind's text-lg */
+  font-weight: 700; /* Tailwind's font-bold */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.shopping-list-card-title-dark {
+  color: #e5e7eb; /* Tailwind's text-gray-200 */
+}
+
+.shopping-list-card-title-light {
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+/* Card Subtitle */
+.shopping-list-card-subtitle-dark {
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.shopping-list-card-subtitle-light {
+  color: #6b7280; /* Tailwind's text-gray-500 */
+}
+
+/* Shared Badge */
+.shared-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem; /* Tailwind's px-2 py-1 */
+  border-radius: 9999px; /* Tailwind's rounded-full */
+  font-size: 0.75rem; /* Tailwind's text-xs */
+  font-weight: 500; /* Tailwind's font-medium */
+}
+
+.shared-badge-dark {
+  background-color: #1e3a8a; /* Tailwind's bg-blue-900 */
+  color: #93c5fd; /* Tailwind's text-blue-300 */
+}
+
+.shared-badge-light {
+  background-color: #dbeafe; /* Tailwind's bg-blue-100 */
+  color: #1e40af; /* Tailwind's text-blue-800 */
+}
+
+/* View List Button */
+.view-list-button {
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  font-weight: 500; /* Tailwind's font-medium */
+  display: flex;
+  align-items: center;
+}
+
+.view-list-button-dark {
+  color: #34d399; /* Tailwind's text-emerald-400 */
+}
+
+.view-list-button-dark:hover {
+  color: #6ee7b7; /* Tailwind's hover:text-emerald-300 */
+}
+
+.view-list-button-light {
+  color: #059669; /* Tailwind's text-emerald-600 */
+}
+
+.view-list-button-light:hover {
+  color: #047857; /* Tailwind's hover:text-emerald-700 */
+}
+
+/* Create New List Placeholder */
+.create-new-list-placeholder {
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  border-width: 1px; /* Tailwind's border */
+  border-style: dashed; /* Tailwind's border-dashed */
+  padding: 1.5rem; /* Tailwind's p-6 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.create-new-list-placeholder-dark {
+  background-color: #111827; /* Tailwind's bg-gray-900 */
+  border-color: #374151; /* Tailwind's border-gray-700 */
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.create-new-list-placeholder-dark:hover {
+  background-color: #1f2937; /* Tailwind's hover:bg-gray-800 */
+}
+
+.create-new-list-placeholder-light {
+  background-color: #f9fafb; /* Tailwind's bg-gray-50 */
+  border-color: #d1d5db; /* Tailwind's border-gray-300 */
+  color: #6b7280; /* Tailwind's text-gray-500 */
+}
+
+.create-new-list-placeholder-light:hover {
+  background-color: #f3f4f6; /* Tailwind's hover:bg-gray-100 */
+}

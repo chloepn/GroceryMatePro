@@ -1,0 +1,52 @@
+/* PantryView.css */
+
+/* Container */
+.pantry-view {
+  padding: 1.5rem; /* Tailwind's p-6 */
+}
+
+.pantry-view-dark {
+  background-color: #1f2937; /* Tailwind's bg-gray-800 */
+  color: #f3f4f6; /* Tailwind's text-gray-100 */
+}
+
+.pantry-view-light {
+  background-color: #ffffff; /* Tailwind's bg-white */
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+/* Title */
+.pantry-title {
+  font-size: 1.5rem; /* Tailwind's text-2xl */
+  font-weight: 700; /* Tailwind's font-bold */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.pantry-title-dark {
+  color: #ffffff; /* Tailwind's text-white */
+}
+
+.pantry-title-light {
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+/* Subtitle */
+.pantry-subtitle {
+  font-size: 1rem; /* Tailwind's text-base */
+  margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+}
+
+.pantry-subtitle-dark {
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.pantry-subtitle-light {
+  color: #4b5563; /* Tailwind's text-gray-600 */
+}
+
+/* Pantry Items */
+.pantry-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tailwind's grid-cols-3 */
+  gap: 1rem; /* Tailwind's gap-4 */
+}

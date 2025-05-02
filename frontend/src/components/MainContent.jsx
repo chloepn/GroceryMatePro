@@ -1,4 +1,3 @@
-// src/components/MainContent.jsx
 import React from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import DashboardView from '../views/DashboardView';
@@ -8,6 +7,7 @@ import PantryView from '../views/PantryView';
 import MealPlannerView from '../views/MealPlannerView';
 import SingleListView from '../views/SingleListView';
 import RecipeDetailView from '../views/RecipeDetailView';
+import '../styles/components/MainContent.css'; // Import the CSS file
 
 const MainContent = ({ activeView, setActiveView }) => {
   const { darkMode } = useTheme();
@@ -33,7 +33,7 @@ const MainContent = ({ activeView, setActiveView }) => {
   };
   
   return (
-    <main className={`flex-1 overflow-y-auto py-6 px-8 ${darkMode ? 'bg-gray-900 text-gray-200' : ''}`}>
+    <main className={`main-content ${darkMode ? 'main-content-dark' : ''}`}>
       {renderContent()}
     </main>
   );

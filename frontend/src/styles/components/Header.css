@@ -1,0 +1,126 @@
+/* Header.css */
+.header {
+  border-bottom-width: 1px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-dark {
+  background-color: #1f2937; /* Tailwind's bg-gray-800 */
+  border-color: #374151; /* Tailwind's border-gray-700 */
+}
+
+.header-light {
+  background-color: #ffffff; /* Tailwind's bg-white */
+  border-color: #e5e7eb; /* Tailwind's border-gray-200 */
+}
+
+.header-title {
+  font-size: 1.25rem; /* Tailwind's text-xl */
+  font-weight: 700; /* Tailwind's font-bold */
+}
+
+.header-title-dark {
+  color: #ffffff; /* Tailwind's text-white */
+}
+
+.header-title-light {
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+.header-date {
+  margin-left: 1rem; /* Tailwind's ml-4 */
+  font-size: 0.875rem; /* Tailwind's text-sm */
+}
+
+.header-date-dark {
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.header-date-light {
+  color: #6b7280; /* Tailwind's text-gray-500 */
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem; /* Tailwind's left-3 */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.search-input {
+  padding-left: 2.5rem; /* Tailwind's pl-10 */
+  padding-right: 1rem; /* Tailwind's pr-4 */
+  padding-top: 0.5rem; /* Tailwind's py-2 */
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  width: 16rem; /* Tailwind's w-64 */
+  outline: none;
+  border-width: 1px;
+}
+
+.search-input-dark {
+  background-color: #374151; /* Tailwind's bg-gray-700 */
+  border-color: #4b5563; /* Tailwind's border-gray-600 */
+  color: #e5e7eb; /* Tailwind's text-gray-200 */
+  placeholder-color: #9ca3af; /* Tailwind's placeholder-gray-400 */
+}
+
+.search-input-light {
+  border-color: #d1d5db; /* Tailwind's border-gray-300 */
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+.notification-button {
+  position: relative;
+  padding: 0.5rem;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: #10b981; /* Tailwind's bg-emerald-500 */
+  border-radius: 9999px; /* Tailwind's rounded-full */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem; /* Tailwind's text-xs */
+  color: #ffffff; /* Tailwind's text-white */
+}
+
+.settings-button {
+  padding: 0.5rem;
+}
+
+.settings-button-dark {
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.settings-button-light {
+  color: #6b7280; /* Tailwind's text-gray-500 */
+}
+
+.dark-mode-toggle {
+  padding: 0.5rem;
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+}
+
+.dark-mode-toggle-dark {
+  background-color: #374151; /* Tailwind's bg-gray-700 */
+  color: #fbbf24; /* Tailwind's text-yellow-300 */
+}
+
+.dark-mode-toggle-light {
+  background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+  color: #374151; /* Tailwind's text-gray-700 */
+}

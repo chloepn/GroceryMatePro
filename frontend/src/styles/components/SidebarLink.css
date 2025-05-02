@@ -1,0 +1,64 @@
+/* SidebarLink.css */
+
+/* Button Styles */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem; /* Tailwind's px-3 py-2 */
+  border-radius: 0.375rem; /* Tailwind's rounded-md */
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  font-weight: 500; /* Tailwind's font-medium */
+  width: 100%; /* Tailwind's w-full */
+}
+
+.sidebar-link-active-dark {
+  background-color: #065f46; /* Tailwind's bg-emerald-900 */
+  color: #6ee7b7; /* Tailwind's text-emerald-400 */
+}
+
+.sidebar-link-active-light {
+  background-color: #d1fae5; /* Tailwind's bg-emerald-100 */
+  color: #065f46; /* Tailwind's text-emerald-600 */
+}
+
+.sidebar-link-inactive-dark {
+  color: #d1d5db; /* Tailwind's text-gray-300 */
+}
+
+.sidebar-link-inactive-dark:hover {
+  background-color: #374151; /* Tailwind's hover:bg-gray-700 */
+}
+
+.sidebar-link-inactive-light {
+  color: #4b5563; /* Tailwind's text-gray-600 */
+}
+
+.sidebar-link-inactive-light:hover {
+  background-color: #f3f4f6; /* Tailwind's hover:bg-gray-100 */
+}
+
+/* Icon Styles */
+.sidebar-link-icon {
+  margin-right: 0.75rem; /* Tailwind's mr-3 */
+}
+
+/* Badge Styles */
+.sidebar-link-badge {
+  margin-left: auto; /* Tailwind's ml-auto */
+  font-size: 0.75rem; /* Tailwind's text-xs */
+  border-radius: 9999px; /* Tailwind's rounded-full */
+  height: 1.25rem; /* Tailwind's h-5 */
+  width: 1.25rem; /* Tailwind's w-5 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; /* Tailwind's text-white */
+}
+
+.sidebar-link-badge-dark {
+  background-color: #047857; /* Tailwind's bg-emerald-700 */
+}
+
+.sidebar-link-badge-light {
+  background-color: #065f46; /* Tailwind's bg-emerald-600 */
+}

@@ -1,0 +1,103 @@
+/* RecipesView.css */
+
+/* Container */
+.recipes-view {
+  padding: 1.5rem; /* Tailwind's p-6 */
+}
+
+.recipes-view-dark {
+  background-color: #1f2937; /* Tailwind's bg-gray-800 */
+  color: #f3f4f6; /* Tailwind's text-gray-100 */
+}
+
+.recipes-view-light {
+  background-color: #ffffff; /* Tailwind's bg-white */
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+/* Title */
+.recipes-title {
+  font-size: 1.5rem; /* Tailwind's text-2xl */
+  font-weight: 700; /* Tailwind's font-bold */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.recipes-title-dark {
+  color: #ffffff; /* Tailwind's text-white */
+}
+
+.recipes-title-light {
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+/* Subtitle */
+.recipes-subtitle {
+  font-size: 1rem; /* Tailwind's text-base */
+  margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+}
+
+.recipes-subtitle-dark {
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.recipes-subtitle-light {
+  color: #4b5563; /* Tailwind's text-gray-600 */
+}
+
+/* Recipes Grid */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tailwind's grid-cols-3 */
+  gap: 1.5rem; /* Tailwind's gap-6 */
+}/* RecipesView.css */
+
+/* Container */
+.recipes-view {
+  padding: 1.5rem; /* Tailwind's p-6 */
+}
+
+.recipes-view-dark {
+  background-color: #1f2937; /* Tailwind's bg-gray-800 */
+  color: #f3f4f6; /* Tailwind's text-gray-100 */
+}
+
+.recipes-view-light {
+  background-color: #ffffff; /* Tailwind's bg-white */
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+/* Title */
+.recipes-title {
+  font-size: 1.5rem; /* Tailwind's text-2xl */
+  font-weight: 700; /* Tailwind's font-bold */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.recipes-title-dark {
+  color: #ffffff; /* Tailwind's text-white */
+}
+
+.recipes-title-light {
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+/* Subtitle */
+.recipes-subtitle {
+  font-size: 1rem; /* Tailwind's text-base */
+  margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+}
+
+.recipes-subtitle-dark {
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.recipes-subtitle-light {
+  color: #4b5563; /* Tailwind's text-gray-600 */
+}
+
+/* Recipes Grid */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tailwind's grid-cols-3 */
+  gap: 1.5rem; /* Tailwind's gap-6 */
+}

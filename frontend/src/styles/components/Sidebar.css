@@ -1,0 +1,138 @@
+/* Sidebar.css */
+
+/* Sidebar Container */
+.sidebar {
+  width: 16rem; /* Tailwind's w-64 */
+  display: flex;
+  flex-direction: column;
+  border-right-width: 1px; /* Tailwind's border-r */
+}
+
+.sidebar-dark {
+  background-color: #1f2937; /* Tailwind's bg-gray-800 */
+  border-color: #374151; /* Tailwind's border-gray-700 */
+}
+
+.sidebar-light {
+  background-color: #ffffff; /* Tailwind's bg-white */
+  border-color: #e5e7eb; /* Tailwind's border-gray-200 */
+}
+
+/* Sidebar Logo */
+.sidebar-logo {
+  padding: 1.25rem; /* Tailwind's p-5 */
+  border-bottom-width: 1px; /* Tailwind's border-b */
+}
+
+.sidebar-logo-dark {
+  border-color: #374151; /* Tailwind's border-gray-700 */
+}
+
+.sidebar-logo-light {
+  border-color: #e5e7eb; /* Tailwind's border-gray-200 */
+}
+
+.sidebar-logo-icon {
+  padding: 0.5rem; /* Tailwind's p-2 */
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+}
+
+.sidebar-logo-icon-dark {
+  background-color: #065f46; /* Tailwind's bg-emerald-900 */
+}
+
+.sidebar-logo-icon-light {
+  background-color: #d1fae5; /* Tailwind's bg-emerald-100 */
+}
+
+.sidebar-logo-title {
+  font-size: 1.25rem; /* Tailwind's text-xl */
+  font-weight: 700; /* Tailwind's font-bold */
+}
+
+.sidebar-logo-title-dark {
+  color: #ffffff; /* Tailwind's text-white */
+}
+
+.sidebar-logo-title-light {
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+/* Navigation */
+.sidebar-nav {
+  flex: 1;
+  padding: 1.25rem 0.75rem; /* Tailwind's py-5 px-3 */
+  overflow-y: auto;
+}
+
+.sidebar-nav-section {
+  margin-top: 2rem; /* Tailwind's mt-8 */
+}
+
+.sidebar-nav-section-title {
+  padding-left: 0.75rem; /* Tailwind's px-3 */
+  font-size: 0.75rem; /* Tailwind's text-xs */
+  font-weight: 600; /* Tailwind's font-semibold */
+  text-transform: uppercase; /* Tailwind's uppercase */
+  letter-spacing: 0.05em; /* Tailwind's tracking-wider */
+}
+
+.sidebar-nav-section-title-dark {
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.sidebar-nav-section-title-light {
+  color: #6b7280; /* Tailwind's text-gray-500 */
+}
+
+/* User Profile */
+.sidebar-user {
+  padding: 1rem; /* Tailwind's p-4 */
+  border-top-width: 1px; /* Tailwind's border-t */
+}
+
+.sidebar-user-dark {
+  border-color: #374151; /* Tailwind's border-gray-700 */
+}
+
+.sidebar-user-light {
+  border-color: #e5e7eb; /* Tailwind's border-gray-200 */
+}
+
+.sidebar-user-avatar {
+  width: 2.5rem; /* Tailwind's w-10 */
+  height: 2.5rem; /* Tailwind's h-10 */
+  background-color: #059669; /* Tailwind's bg-emerald-600 */
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; /* Tailwind's text-white */
+  font-weight: 500; /* Tailwind's font-medium */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Tailwind's shadow-sm */
+}
+
+.sidebar-user-name {
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  font-weight: 500; /* Tailwind's font-medium */
+}
+
+.sidebar-user-name-dark {
+  color: #e5e7eb; /* Tailwind's text-gray-200 */
+}
+
+.sidebar-user-name-light {
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+.sidebar-user-plan {
+  font-size: 0.75rem; /* Tailwind's text-xs */
+}
+
+.sidebar-user-plan-dark {
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+}
+
+.sidebar-user-plan-light {
+  color: #6b7280; /* Tailwind's text-gray-500 */
+}

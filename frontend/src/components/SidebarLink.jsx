@@ -1,6 +1,6 @@
-// src/components/SidebarLink.jsx
 import React from 'react';
 import { useTheme } from '../contexts/ThemeContext';
+import '../styles/components/SidebarLink.css'; // Import the CSS file
 
 const SidebarLink = ({ icon, label, active, onClick, badge }) => {
   const { darkMode } = useTheme();
@@ -8,20 +8,20 @@ const SidebarLink = ({ icon, label, active, onClick, badge }) => {
   return (
     <button
       onClick={onClick}
-      className={`flex items-center px-3 py-2 rounded-md text-sm font-medium w-full ${
+      className={`sidebar-link ${
         active 
           ? darkMode 
-            ? 'bg-emerald-900 text-emerald-400' 
-            : 'bg-emerald-100 text-emerald-600' 
+            ? 'sidebar-link-active-dark' 
+            : 'sidebar-link-active-light' 
           : darkMode 
-            ? 'text-gray-300 hover:bg-gray-700' 
-            : 'text-gray-600 hover:bg-gray-100'
+            ? 'sidebar-link-inactive-dark' 
+            : 'sidebar-link-inactive-light'
       }`}
     >
-      <span className="mr-3">{icon}</span>
+      <span className="sidebar-link-icon">{icon}</span>
       <span>{label}</span>
       {badge && (
-        <span className={`ml-auto ${darkMode ? 'bg-emerald-700' : 'bg-emerald-600'} text-white text-xs rounded-full h-5 w-5 flex items-center justify-center`}>
+        <span className={`sidebar-link-badge ${darkMode ? 'sidebar-link-badge-dark' : 'sidebar-link-badge-light'}`}>
           {badge}
         </span>
       )}

@@ -1,34 +1,34 @@
-// src/components/StatCard.jsx
 import React from 'react';
 import { useTheme } from '../contexts/ThemeContext';
+import '../styles/components/StatCard.css'; // Import the CSS file
 
 const StatCard = ({ title, value, trend, trendType, icon }) => {
   const { darkMode } = useTheme();
   
   return (
-    <div className={`${darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} rounded-lg shadow-sm border p-6`}>
+    <div className={`stat-card ${darkMode ? 'stat-card-dark' : 'stat-card-light'}`}>
       <div className="flex items-center mb-4">
-        <div className={`p-2 rounded-md ${darkMode ? 'bg-gray-700' : 'bg-gray-50'}`}>
+        <div className={`stat-card-icon ${darkMode ? 'stat-card-icon-dark' : 'stat-card-icon-light'}`}>
           {React.cloneElement(icon, { 
             className: `${
               icon.props.size === 20 
-                ? (darkMode ? 'text-emerald-400' : 'text-emerald-600') 
+                ? (darkMode ? 'stat-card-icon-emerald-dark' : 'stat-card-icon-emerald-light') 
                 : ''
             } ${icon.props.className || ''}` 
           })}
         </div>
         <div className="ml-auto">
-          <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${
+          <span className={`stat-card-trend ${
             trendType === 'up' 
-              ? darkMode ? 'bg-green-900 text-green-300' : 'bg-green-100 text-green-800' 
-              : darkMode ? 'bg-red-900 text-red-300' : 'bg-red-100 text-red-800'
+              ? darkMode ? 'stat-card-trend-up-dark' : 'stat-card-trend-up-light' 
+              : darkMode ? 'stat-card-trend-down-dark' : 'stat-card-trend-down-light'
           }`}>
             {trend}
           </span>
         </div>
       </div>
-      <h3 className={`text-3xl font-bold ${darkMode ? 'text-gray-100' : 'text-gray-800'}`}>{value}</h3>
-      <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>{title}</p>
+      <h3 className={`stat-card-value ${darkMode ? 'stat-card-value-dark' : 'stat-card-value-light'}`}>{value}</h3>
+      <p className={`stat-card-title ${darkMode ? 'stat-card-title-dark' : 'stat-card-title-light'}`}>{title}</p>
     </div>
   );
 };

@@ -1,39 +1,39 @@
-// src/components/MealPlanRow.jsx
 import React from 'react';
 import { Plus } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
+import '../styles/components/MealPlanRow.css'; // Import the CSS file
 
 const MealPlanRow = ({ day, date, meals, isToday }) => {
   const { darkMode } = useTheme();
   
   return (
-    <div className={`flex items-center p-3 rounded-md ${
+    <div className={`meal-plan-row ${
       isToday 
         ? darkMode 
-          ? 'bg-emerald-900 border border-emerald-800' 
-          : 'bg-emerald-50 border border-emerald-100' 
+          ? 'meal-plan-row-today-dark' 
+          : 'meal-plan-row-today-light' 
         : ''
     }`}>
-      <div className="w-24">
-        <p className={`font-medium ${
+      <div className="meal-plan-day">
+        <p className={`${
           isToday 
-            ? darkMode ? 'text-emerald-300' : 'text-emerald-700' 
-            : darkMode ? 'text-gray-200' : 'text-gray-700'
+            ? darkMode ? 'meal-plan-day-dark' : 'meal-plan-day-light' 
+            : darkMode ? 'meal-plan-day-default-dark' : 'meal-plan-day-default-light'
         }`}>{day}</p>
-        <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>{date}</p>
+        <p className={`meal-plan-date ${darkMode ? 'meal-plan-date-dark' : 'meal-plan-date-light'}`}>{date}</p>
       </div>
       <div className="flex-1">
         {meals.length > 0 ? (
-          <div className="flex flex-wrap gap-2">
+          <div className="meal-plan-meals">
             {meals.map((meal, idx) => (
               <span 
                 key={idx} 
-                className={`text-xs px-2 py-1 rounded-md ${
+                className={`meal-plan-meal ${
                   meal.type === 'breakfast' 
-                    ? darkMode ? 'bg-amber-900 text-amber-300' : 'bg-amber-100 text-amber-800' 
+                    ? darkMode ? 'meal-plan-meal-breakfast-dark' : 'meal-plan-meal-breakfast-light' 
                     : meal.type === 'lunch' 
-                      ? darkMode ? 'bg-blue-900 text-blue-300' : 'bg-blue-100 text-blue-800' 
-                      : darkMode ? 'bg-purple-900 text-purple-300' : 'bg-purple-100 text-purple-800'
+                      ? darkMode ? 'meal-plan-meal-lunch-dark' : 'meal-plan-meal-lunch-light' 
+                      : darkMode ? 'meal-plan-meal-dinner-dark' : 'meal-plan-meal-dinner-light'
                 }`}
               >
                 {meal.title}
@@ -41,10 +41,10 @@ const MealPlanRow = ({ day, date, meals, isToday }) => {
             ))}
           </div>
         ) : (
-          <span className={`text-sm ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>No meals planned</span>
+          <span className={`meal-plan-no-meals ${darkMode ? 'meal-plan-no-meals-dark' : 'meal-plan-no-meals-light'}`}>No meals planned</span>
         )}
       </div>
-      <button className={`ml-auto ${darkMode ? 'text-gray-400 hover:text-emerald-400' : 'text-gray-400 hover:text-emerald-600'}`}>
+      <button className={`meal-plan-add-button ${darkMode ? 'meal-plan-add-button-dark' : 'meal-plan-add-button-light'}`}>
         <Plus size={16} />
       </button>
     </div>

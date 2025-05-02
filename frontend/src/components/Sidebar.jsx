@@ -1,26 +1,26 @@
-// src/components/Sidebar.jsx
 import React from 'react';
 import { Home, ShoppingCart, Book, Carrot, Calendar, Heart, UserPlus, ShoppingBag, LogOut } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import SidebarLink from './SidebarLink';
+import '../styles/components/Sidebar.css'; // Import the CSS file
 
 const Sidebar = ({ activeView, setActiveView }) => {
   const { darkMode } = useTheme();
   
   return (
-    <div className={`w-64 ${darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} border-r flex flex-col`}>
+    <div className={`sidebar ${darkMode ? 'sidebar-dark' : 'sidebar-light'}`}>
       {/* Logo */}
-      <div className={`p-5 border-b ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+      <div className={`sidebar-logo ${darkMode ? 'sidebar-logo-dark' : 'sidebar-logo-light'}`}>
         <div className="flex items-center space-x-3">
-          <div className={`${darkMode ? 'bg-emerald-900' : 'bg-emerald-100'} p-2 rounded-lg`}>
+          <div className={`sidebar-logo-icon ${darkMode ? 'sidebar-logo-icon-dark' : 'sidebar-logo-icon-light'}`}>
             <ShoppingCart size={22} className="text-emerald-500" />
           </div>
-          <h1 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-800'}`}>GroceryMate</h1>
+          <h1 className={`sidebar-logo-title ${darkMode ? 'sidebar-logo-title-dark' : 'sidebar-logo-title-light'}`}>GroceryMate</h1>
         </div>
       </div>
       
       {/* Main Navigation */}
-      <nav className="flex-1 py-5 px-3 overflow-y-auto">
+      <nav className="sidebar-nav">
         <div className="space-y-1">
           <SidebarLink 
             icon={<Home size={20} />} 
@@ -56,8 +56,8 @@ const Sidebar = ({ activeView, setActiveView }) => {
         </div>
         
         {/* Quick Access Section */}
-        <div className="mt-8">
-          <h3 className={`px-3 text-xs font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-500'} uppercase tracking-wider`}>
+        <div className="sidebar-nav-section">
+          <h3 className={`sidebar-nav-section-title ${darkMode ? 'sidebar-nav-section-title-dark' : 'sidebar-nav-section-title-light'}`}>
             Quick Access
           </h3>
           <div className="mt-2 space-y-1">
@@ -84,14 +84,14 @@ const Sidebar = ({ activeView, setActiveView }) => {
       </nav>
       
       {/* User Profile */}
-      <div className={`p-4 border-t ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+      <div className={`sidebar-user ${darkMode ? 'sidebar-user-dark' : 'sidebar-user-light'}`}>
         <div className="flex items-center">
-          <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-medium shadow-sm">
+          <div className="sidebar-user-avatar">
             ME
           </div>
           <div className="ml-3">
-            <p className={`text-sm font-medium ${darkMode ? 'text-gray-200' : 'text-gray-800'}`}>Morgan Edwards</p>
-            <p className={`text-xs ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>Premium Plan</p>
+            <p className={`sidebar-user-name ${darkMode ? 'sidebar-user-name-dark' : 'sidebar-user-name-light'}`}>Morgan Edwards</p>
+            <p className={`sidebar-user-plan ${darkMode ? 'sidebar-user-plan-dark' : 'sidebar-user-plan-light'}`}>Premium Plan</p>
           </div>
           <button className={`ml-auto ${darkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700'}`}>
             <LogOut size={18} />
