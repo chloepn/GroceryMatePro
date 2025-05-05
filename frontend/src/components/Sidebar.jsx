@@ -29,10 +29,10 @@ const Sidebar = ({ activeView, setActiveView }) => {
             onClick={() => setActiveView('dashboard')} 
           />
           <SidebarLink 
-            icon={<ShoppingCart size={20} />} 
-            label="Shopping Lists" 
-            active={activeView === 'shopping' || activeView === 'viewlist'} 
-            onClick={() => setActiveView('shopping')} 
+            icon={<Carrot size={20} />} 
+            label="Ingredients" 
+            active={activeView === 'ingredients' || activeView === 'viewingredient'} 
+            onClick={() => setActiveView('ingredients')} 
             badge="2"
           />
           <SidebarLink 
@@ -40,6 +40,13 @@ const Sidebar = ({ activeView, setActiveView }) => {
             label="Recipes" 
             active={activeView === 'recipes' || activeView === 'viewrecipe'} 
             onClick={() => setActiveView('recipes')} 
+          />
+          <SidebarLink 
+            icon={<ShoppingCart size={20} />} 
+            label="Shopping Lists" 
+            active={activeView === 'shopping' || activeView === 'viewlist'} 
+            onClick={() => setActiveView('shopping')} 
+            badge="2"
           />
           <SidebarLink 
             icon={<Carrot size={20} />} 

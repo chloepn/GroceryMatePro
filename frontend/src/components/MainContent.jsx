@@ -6,7 +6,7 @@ import RecipesView from '../views/RecipesView';
 import PantryView from '../views/PantryView';
 import MealPlannerView from '../views/MealPlannerView';
 import SingleListView from '../views/SingleListView';
-import RecipeDetailView from '../views/RecipeDetailView';
+import IngredientsView from '../views/IngredientsView';
 import '../styles/components/MainContent.css'; // Import the CSS file
 
 const MainContent = ({ activeView, setActiveView }) => {
@@ -17,6 +17,8 @@ const MainContent = ({ activeView, setActiveView }) => {
     switch(activeView) {
       case 'shopping':
         return <ShoppingListView setActiveView={setActiveView} />;
+      case 'ingredients':
+        return <IngredientsView setActiveView={setActiveView} />;
       case 'recipes':
         return <RecipesView setActiveView={setActiveView} />;
       case 'pantry':
@@ -26,7 +28,7 @@ const MainContent = ({ activeView, setActiveView }) => {
       case 'viewlist':
         return <SingleListView goBack={() => setActiveView('shopping')} />;
       case 'viewrecipe':
-        return <RecipeDetailView goBack={() => setActiveView('recipes')} />;
+        return <RecipesView goBack={() => setActiveView('recipes')} />;
       default:
         return <DashboardView setActiveView={setActiveView} />;
     }
