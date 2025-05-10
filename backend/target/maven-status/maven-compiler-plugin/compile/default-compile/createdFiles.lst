@@ -1,0 +1,11 @@
+com/example/grocerymatepro/GroceryMateProApplication.class
+com/example/grocerymatepro/model/UserFavorite.class
+com/example/grocerymatepro/model/User.class
+com/example/grocerymatepro/model/Recipe.class
+com/example/grocerymatepro/model/ShoppingCartItem.class
+com/example/grocerymatepro/model/ShoppingCartIngredient.class
+com/example/grocerymatepro/model/ShoppingListSmsLog.class
+com/example/grocerymatepro/model/ShoppingListSmsLog$SmsStatus.class
+com/example/grocerymatepro/model/ShoppingCart.class
+com/example/grocerymatepro/model/RecipeIngredient.class
+com/example/grocerymatepro/model/Ingredient.class

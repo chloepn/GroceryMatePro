@@ -1,0 +1,10 @@
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/model/User.java
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/model/RecipeIngredient.java
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/model/UserFavorite.java
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/model/ShoppingCart.java
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/model/ShoppingCartIngredient.java
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/model/Recipe.java
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/model/ShoppingCartItem.java
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/model/ShoppingListSmsLog.java
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/model/Ingredient.java
+/Users/chloephan/IdeaProjects/GroceryMatePro/backend/src/main/java/com/example/grocerymatepro/GroceryMateProApplication.java
